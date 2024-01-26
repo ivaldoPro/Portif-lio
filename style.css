@@ -204,6 +204,7 @@ section.portfolio{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff3e;
 }
+
 section.portfolio .flex{
     justify-content: space-around;
     margin-top: 60px;
@@ -319,5 +320,85 @@ footer .line-footer p a{
 }
 
 @media screm and (max-width: 1030px){
+    /* Classes Gerais */
+    .flex{
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+
+    }
+    /* Cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+
+    }
     
+    /* Topo Do Site */
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+    
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    /* Especialidades*/
+    section.especilidades{
+        padding: 40px 8%;
+    }
+
+    /* SOBRE*/
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* Portfólio */
+    section.portfolio{
+        padding: 80px 8%;
+        
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    /* Rodapé */
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
 }
