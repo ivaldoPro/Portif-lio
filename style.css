@@ -384,10 +384,14 @@ footer .line-footer p a{
     color:yellow;
 }
 
-@media screm and (max-width: 1030px){
+@media screen and (max-width: 1010px){
     /* Classes Gerais */
     .flex{
         flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
     }
 
     h2.titulo{
