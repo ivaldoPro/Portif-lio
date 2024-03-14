@@ -334,7 +334,7 @@ form input, form textarea{
     outline: 0;
     padding: 20px 15px;
     border-radius: 15px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 18px;
 }
 
