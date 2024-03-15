@@ -25,12 +25,12 @@
     }
 
     $smtp = $conn->prepare("INSERT INTO mensagens (nome, email, celular, mensagem, data, hora) VALUES (?,?,?,?,?,?)");
-    $smtp->bind_param("sssss",$nome, $email, $mensagem, $data_atual, $hora_atual);
+    $smtp->bind_param("ssssss", $nome, $email, $celular, $mensagem, $data_atual, $hora_atual);
     
     if($smtp->execute()){
         echo "Mensagem enviada com sucesso!";
     }else{
-        echo "Erro no envio da mensagem: " .$smtp->error;
+        echo "Erro no envio da mensagem: ".$smtp->error;
     }
 
     $smtp->close();
